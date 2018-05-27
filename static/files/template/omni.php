@@ -40,6 +40,7 @@
 <div class="omni ui fluid icon input">
   <input
     placeholder="Enter search query, torrent URL or magnet URI"
+    value="<?php echo $_GET['magnet']; ?>"
     ng-model="inputs.omni"
     ng-change="parse()"
     ng-enter="submitOmni()"/>
